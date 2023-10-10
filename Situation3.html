@@ -40,7 +40,7 @@
                 <span style="font-size: 2.25rem;">Situation 3 : au bureau</span>
               </h1>
               <p style="text-align: left;">
-                <span style="line-height: 2.0;">Scénario : Dictum non consectetur a erat nam at. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Tellus mauris a diam maecenas sed enim ut sem. Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam. Pretium nibh ipsum consequat nisl vel pretium. In eu mi bibendum neque egestas congue. Vitae ultricies leo integer malesuada nunc. Nibh praesent tristique magna sit amet purus gravida. Diam volutpat commodo sed egestas. Gravida dictum fusce ut placerat orci nulla pellentesque.</span>
+                <span style="line-height: 2.0;">Scénario : Vous travaillez avec votre collègue au bureau, elle vous fait des avances non désirées en vous touchant de manière inappropriée.</span>
               </p>
             </div>
           </div>
@@ -49,16 +49,21 @@
         <h3 class="u-subtitle u-text u-text-2">Que faites-vous dans cette situation ?</h3>
         <form id="maForme">
             <label>
-                <input type="radio" name="action" value="rien"> Rien
+                <input type="radio" name="action" value="1"> Ignorer la situation.
             </label>
             <br>
             <label>
-                <input type="radio" name="action" value="cours"> Je cours
+                <input type="radio" name="action" value="2"> Intervenir immédiatement et demander à votre collègue de cesser.
             </label>
             <br>
             <label>
-                <input type="radio" name="action" value="vole"> Je vole
+                <input type="radio" name="action" value="3"> Parler à un autre collègue pour obtenir de l'aide.
             </label>
+            <br>
+            <label>
+                <input type="radio" name="action" value="4"> Signaler la situation au département des ressources humaines.
+            </label>
+            <br>
             <br>
             <input type="button" value="Valider" onclick="afficherReponse()">
         </form>
@@ -72,17 +77,25 @@
     <script>
         function afficherReponse() {
             var reponseDiv = document.getElementById("reponse");
-            
             var selectedOption = document.querySelector('input[name="action"]:checked');
             
             if (!selectedOption) {
                 reponseDiv.innerHTML = "Vous n'avez rien sélectionné.";
             } else {
                 var action = selectedOption.value;
-                if (action === "cours") {
-                    reponseDiv.innerHTML = "Correct : Vous courez dans cette situation.";
-                } else {
-                    reponseDiv.innerHTML = "Incorrect : Vous ne faites rien ou vous volez dans cette situation.";
+                switch (action) {
+                    case "1":
+                        reponseDiv.innerHTML = "<br>\Ignorer la situation :<br>\"Ignorer la situation peut être tentant, mais il est essentiel de traiter les avances non désirées de manière appropriée. Ignorer cela pourrait permettre au comportement de continuer. Je vous encourage à envisager d'autres mesures pour garantir un environnement de travail sûr.\"";
+                        break;
+                    case "2":
+                        reponseDiv.innerHTML = "<br>\Intervenir immédiatement et demander à votre collègue de cesser :<br>\"Votre réponse est appropriée. Intervenir immédiatement et demander à votre collègue de cesser est une manière efficace de mettre fin au harcèlement sexuel. Il est important d'établir des limites claires.\"";
+                        break;
+                    case "3":
+                        reponseDiv.innerHTML = "<br>\Parler à un autre collègue pour obtenir de l'aide :<br>\"Parler à un autre collègue pour obtenir de l'aide peut être une bonne idée pour avoir du soutien émotionnel, mais il est tout aussi important de mettre fin au harcèlement. Vous devriez également envisager de signaler la situation au département des ressources humaines pour qu'ils puissent prendre des mesures appropriées.\"";
+                        break;
+                    case "4":
+                        reponseDiv.innerHTML = "<br>\Signaler la situation au département des ressources humaines :<br>\"Votre réponse est la plus appropriée. Signaler la situation au département des ressources humaines est essentiel pour mettre fin au harcèlement sexuel en milieu de travail. Cela protégera vos droits et contribuera à créer un environnement de travail sûr pour tous les employés.\"";
+                        break;
                 }
             }
         }
