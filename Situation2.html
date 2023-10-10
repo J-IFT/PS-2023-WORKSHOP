@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="fr"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Situation 1 : en réunion, Que faites-vous dans cette situation ?">
+    <meta name="description" content="">
+    <title>Page 1</title>
+    <link rel="stylesheet" href="styles.css" media="screen">
+    <link rel="stylesheet" href="situations.css" media="screen">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "WebSite5997176"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Page 1">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body data-path-to-root="./" class="u-body u-xl-mode" data-lang="fr"><header class="u-clearfix u-header u-palette-2-light-2 u-header" id="sec-c173"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h3 class="u-headline u-text u-text-default u-text-1">
+          <a href="/">#JEUARCELPA</a>
+        </h3>
+      </div></header>
+    <section class="u-clearfix u-container-align-center u-section-1" id="sec-3100">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <img class="u-image u-image-default u-image-1" src="images/5.png" alt="" data-image-width="1000" data-image-height="412">
+      </div>
+    </section>
+    <section class="u-align-left u-clearfix u-section-2" id="sec-eaa6">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="fr-box fr-view u-clearfix u-rich-text u-text u-text-1" role="application">
+          <div class="fr-wrapper" dir="auto">
+            <div class="fr-element fr-view" dir="auto" aria-disabled="false" spellcheck="true">
+              <h1 style="text-align: center;">
+                <span style="font-size: 2.25rem;">Situation 2 : en réunion</span>
+              </h1>
+              <p style="text-align: left;">
+                <span style="line-height: 2.0;">Scénario : Dictum non consectetur a erat nam at. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Tellus mauris a diam maecenas sed enim ut sem. Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam. Pretium nibh ipsum consequat nisl vel pretium. In eu mi bibendum neque egestas congue. Vitae ultricies leo integer malesuada nunc. Nibh praesent tristique magna sit amet purus gravida. Diam volutpat commodo sed egestas. Gravida dictum fusce ut placerat orci nulla pellentesque.</span>
+              </p>
+            </div>
+          </div>
+          <div class="fr-second-toolbar"></div>
+        </div>
+        <h3 class="u-subtitle u-text u-text-2">Que faites-vous dans cette situation ?</h3>
+        <form id="maForme">
+            <label>
+                <input type="radio" name="action" value="rien"> Rien
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="action" value="cours"> Je cours
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="action" value="vole"> Je vole
+            </label>
+            <br>
+            <input type="button" value="Valider" onclick="afficherReponse()">
+        </form>
+        
+        <div id="reponse">
+            <!-- La réponse sera affichée ici -->
+        </div>
+      </div>
+    </section>
+    
+    <script>
+        function afficherReponse() {
+            var reponseDiv = document.getElementById("reponse");
+            
+            var selectedOption = document.querySelector('input[name="action"]:checked');
+            
+            if (!selectedOption) {
+                reponseDiv.innerHTML = "Vous n'avez rien sélectionné.";
+            } else {
+                var action = selectedOption.value;
+                if (action === "cours") {
+                    reponseDiv.innerHTML = "Correct : Vous courez dans cette situation.";
+                } else {
+                    reponseDiv.innerHTML = "Incorrect : Vous ne faites rien ou vous volez dans cette situation.";
+                }
+            }
+        }
+    </script>
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-1141"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Présenté par Aymeric, Juliette, Walid, Meidi &amp; Mohand</p>
+      </div></footer>
+  
+</body></html>
