@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="fr"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Situation 4</title>
+    <link rel="stylesheet" href="styles.css" media="screen">
+    <link rel="stylesheet" href="situations.css" media="screen">
+    <link rel="icon" href="images/logo.ico">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+
+  <body data-path-to-root="./" class="u-body u-xl-mode" data-lang="fr"><header class="u-clearfix u-header u-palette-2-light-2 u-header" id="sec-c173"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h3 class="u-headline u-text u-text-default u-text-1">
+          <a>#JUSTICEAUBUREAU</a>
+        </h3>
+        <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-1" src="images/logo.ico" alt="" data-image-width="500" data-image-height="500">
+      </div></header>
+      <section class="u-clearfix u-container-align-center u-section-1" id="sec-3100">
+        <div class="u-clearfix u-sheet u-sheet-1">
+          <img class="u-image u-image-default u-image-1" src="images/mail2.png" alt="" data-image-width="1000" data-image-height="412">
+        </div>
+      </section>
+    <section class="u-align-left u-clearfix u-section-2" id="sec-eaa6">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="fr-box fr-view u-clearfix u-rich-text u-text u-text-1" role="application">
+          <div class="fr-wrapper" dir="auto">
+            <div class="fr-element fr-view" dir="auto" aria-disabled="false" spellcheck="true">
+              <h1 style="text-align: center;">
+                <span style="font-size: 2.25rem;">Situation 4 : par mail</span>
+              </h1>
+              <p style="text-align: left;">
+                <span style="line-height: 2.0;">Scénario 2: Vous travaillez dans un bureau, et vous recevez régulièrement des e-mails inappropriés et suggestifs d'un collègue sur votre adresse de travail.</span>
+              </p>
+            </div>
+          </div>
+          <div class="fr-second-toolbar"></div>
+        </div>
+        <h3 class="u-subtitle u-text u-text-2">Comment réagiriez-vous ?</h3>
+        <form id="maForme">
+            <label>
+                <input type="radio" name="action" value="1"> Ignorer les e-mails pour ne pas causer de problème.
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="action" value="2">  Répondre en disant que ce comportement n'est pas acceptable.
+            </label>
+            <br>
+            <label>
+              <input type="radio" name="action" value="3"> Signaler la situation au département des ressources humaines.
+          </label>
+            <br>
+            <label>
+                <input type="radio" name="action" value="4"> Parler à un ami au travail pour obtenir des conseils.
+            </label>
+            <br>
+           
+            <br>
+            <br>
+            <input type="button" value="Valider" onclick="afficherReponse()">
+            <a href="Situation4-1.html" class="u-border-none u-btn u-button-style u-palette-2-light-2 u-btn-1" style="float: right;">Suivant ></a>
+            <a href="Situation4.html" class="u-border-none u-btn u-button-style u-palette-2-light-2 u-btn-1" style="float: right;"> < Précédent </a>           </form>
+        
+        <div id="reponse">
+            <!-- La réponse sera affichée ici -->
+        </div>
+      </div>
+    </section>
+    <div class="u-clearfix u-sheet u-sheet-1">
+        <p>Quelques liens utiles :</p>
+        <ul>
+            <li><a href="https://www.service-public.fr/particuliers/vosdroits/F2354">Harcèlement moral au travail</a></li>
+            <li><a href="https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006177846">Code du travail</a></li>
+            <li><a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037289662">Code pénal</a></li>
+        </ul>
+        <p>Si vous êtes victime de harcèlement au travail, France Victimes est là pour vous venir en aide. Nos écoutants sont disponibles 7j/7 de 9h à 19h par le biais du numéro gratuit d’aide aux victimes, le 116 006 (hors métropole +33 1 80 52 33 76).</p>
+    </div>
+
+    <br>
+    <br>
+
+    
+    
+    
+    <!-- Bouton de retour à la page d'accueil -->
+    <div class="u-clearfix u-sheet u-sheet-1">
+        <a href="Accueil.html">Retour à la page d'accueil</a>
+    </div>
+
+    <br>
+    <script>
+        function afficherReponse() {
+            var reponseDiv = document.getElementById("reponse");
+            var selectedOption = document.querySelector('input[name="action"]:checked');
+            
+            if (!selectedOption) {
+                reponseDiv.innerHTML = "Vous n'avez rien sélectionné.";
+                reponseDiv.style.color = "red";
+            } else {
+                var action = selectedOption.value;
+                switch (action) {
+                    case "1":
+                        reponseDiv.innerHTML = "<br>\Ignorer les e-mails pour ne pas causer de problème :<br><br>\"Je comprends que cela puisse être tentant, mais il est essentiel de traiter le harcèlement sexuel sérieusement. Ignorer les e-mails pourrait permettre au comportement de continuer. Je vous encourage à envisager de signaler la situation pour garantir un environnement de travail sûr.\"";
+                        reponseDiv.style.color = "red";
+                        break;
+                    case "2":
+                        reponseDiv.innerHTML = "<br>\Répondre en disant que ce comportement n'est pas acceptable :<br><br>\"Votre réponse est appropriée. Dire clairement que le comportement n'est pas acceptable peut aider à établir des limites claires. Si cela ne résout pas le problème, envisagez de signaler la situation au département des ressources humaines.\"";
+                        reponseDiv.style.color = "green";
+                        break;
+                    case "3":
+                        reponseDiv.innerHTML = "<br>\Signaler la situation au département des ressources humaines :<br><br>\"Votre réponse est la plus appropriée. Signaler la situation au département des ressources humaines est essentiel pour mettre fin au harcèlement sexuel au travail. Cela permettra de protéger vos droits et d'assurer un environnement de travail sûr pour tous les employés.\"";
+                        reponseDiv.style.color = "green";
+                        break;
+                    case "4":
+                        reponseDiv.innerHTML = "<br>\ Parler à un ami au travail pour obtenir des conseils :<br><br>\"Parler à un ami pour obtenir des conseils peut être utile pour vous soutenir émotionnellement. Cependant, il est tout aussi important de signaler la situation au département des ressources humaines pour résoudre le problème de manière appropriée.\"";
+                        reponseDiv.style.color = "orange";
+                        break;
+                    
+                }
+            }
+        }
+    </script>
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-1141"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Présenté par Aymeric, Juliette, Walid, Meidi &amp; Mohand</p>
+      </div></footer>
+  
+</body></html>
