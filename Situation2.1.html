@@ -2,7 +2,7 @@
 <html style="font-size: 16px;" lang="fr"><head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <title>Situation 3</title>
+    <title>Situation 2</title>
     <link rel="stylesheet" href="styles.css" media="screen">
     <link rel="stylesheet" href="situations.css" media="screen">
     <link rel="icon" href="images/logo.ico">
@@ -19,7 +19,7 @@
     </header>
     <section class="u-clearfix u-container-align-center u-section-1" id="sec-3100">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <img class="u-image u-image-default u-image-1" src="images/8.png" alt="" data-image-width="1000" data-image-height="412">
+        <img class="u-image u-image-default u-image-1" src="images/10.png" alt="" data-image-width="1000" data-image-height="412">
       </div>
     </section>
     <section class="u-align-left u-clearfix u-section-2" id="sec-eaa6">
@@ -28,10 +28,10 @@
           <div class="fr-wrapper" dir="auto">
             <div class="fr-element fr-view" dir="auto" aria-disabled="false" spellcheck="true">
               <h1 style="text-align: center;">
-                <span style="font-size: 2.25rem;">Situation 3 : au bureau</span>
+                <span style="font-size: 2.25rem;">Situation 2 : en salle de pause</span>
               </h1>
               <p style="text-align: left;">
-                <span style="line-height: 2.0;">Scénario : Vous êtes concentré sur votre travail au bureau, mais soudain, votre collègue commence à franchir une ligne inacceptable en vous touchant de manière inappropriée. La tension monte rapidement alors que vous vous trouvez confronté à des avances non désirées, créant une situation très dérangeante.</span>
+                <span style="line-height: 2.0;">Scénario : Vous travaillez comme assistante pour votre chef dans un bureau. Un jour, pendant que vous travaillez, votre chef sort son téléphone portable et prend une photo de vous sans votre consentement, en disant quelque chose comme : "C'est pour montrer à tout le monde à quel point mon assistante est efficace."</span>
               </p>
             </div>
           </div>
@@ -40,19 +40,19 @@
         <h3 class="u-subtitle u-text u-text-2">Que faites-vous dans cette situation ?</h3>
         <form id="maForme">
             <label>
-                <input type="radio" name="action" value="1"> Ignorer la situation pour éviter des conflits.
+                <input type="radio" name="action" value="1"> Ignorer la situation et continuer à travailler comme si de rien n'était.
             </label>
             <br>
             <label>
-                <input type="radio" name="action" value="2"> Intervenir immédiatement et demander à votre chef de cesser.
+                <input type="radio" name="action" value="2"> Demander à votre chef de supprimer immédiatement la photo et de respecter votre vie privée.
             </label>
             <br>
             <label>
-                <input type="radio" name="action" value="3"> Parler à un autre collègue pour obtenir de l'aide.
+                <input type="radio" name="action" value="3"> Prendre vous-même une photo de votre chef pour montrer que cela ne vous dérange pas.
             </label>
             <br>
             <label>
-                <input type="radio" name="action" value="4"> Signaler la situation au département des ressources humaines.
+                <input type="radio" name="action" value="4"> Parler à un collègue pour obtenir des conseils sur la manière de gérer la situation.
             </label>
             <br>
             <br>
@@ -82,9 +82,9 @@
     <div class="u-clearfix u-sheet u-sheet-1">
         <a href="Accueil.html">Retour à la page d'accueil</a>
     </div>
-    
-    <br>
 
+    <br>
+    
     <script>
         function afficherReponse() {
             var reponseDiv = document.getElementById("reponse");
@@ -96,16 +96,16 @@
                 var action = selectedOption.value;
                 switch (action) {
                     case "1":
-                        reponseDiv.innerHTML = "<br>\Ignorer la situation peut être tentant, mais il est essentiel de traiter le harcèlement sexuel sérieusement. Ignorer cela pourrait permettre au comportement de continuer. Je vous encourage à envisager de signaler la situation pour garantir un environnement de travail sûr.";
+                        reponseDiv.innerHTML = "<br>\Ignorer la situation pourrait signifier que le comportement de votre chef se poursuit. Il est important de faire respecter votre vie privée au travail. Considérez d'autres options pour gérer cette situation.\"";
                         break;
                     case "2":
-                        reponseDiv.innerHTML = "<br>\Votre réponse est appropriée. Demander à votre chef de cesser immédiatement est une action importante pour mettre fin au harcèlement. Si cela ne résout pas le problème, envisagez de signaler la situation au département des ressources humaines.";
+                        reponseDiv.innerHTML = "<br>\C'est une réponse appropriée. Vous avez le droit de demander le respect de votre vie privée au travail. Si votre chef ne coopère pas, envisagez de signaler la situation aux ressources humaines.\"";
                         break;
                     case "3":
-                        reponseDiv.innerHTML = "<br>\Parler à un collègue pour obtenir de l'aide émotionnelle peut être utile, mais il est tout aussi important de signaler la situation au département des ressources humaines pour résoudre le problème de manière appropriée.";
+                        reponseDiv.innerHTML = "<br>\Cela pourrait ne pas être la meilleure approche, car cela peut être interprété différemment. Il est recommandé de discuter directement avec votre chef pour lui faire part de votre préoccupation quant à la prise de photos non autorisées.\"";
                         break;
                     case "4":
-                        reponseDiv.innerHTML = "<br>\Votre réponse est la plus appropriée. Signaler la situation au département des ressources humaines est essentiel pour mettre fin au harcèlement sexuel au travail. Cela permettra de protéger vos droits et d'assurer un environnement de travail sûr pour tous les employés.";
+                        reponseDiv.innerHTML = "<br>\Parler à un collègue peut vous fournir des conseils utiles, mais il est également important de communiquer directement avec votre chef pour résoudre le problème à la source. Si le problème persiste, envisagez de signaler la situation aux ressources humaines.\"";
                         break;
                 }
             }

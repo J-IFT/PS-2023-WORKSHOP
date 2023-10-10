@@ -2,7 +2,7 @@
 <html style="font-size: 16px;" lang="fr"><head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <title>Situation 3</title>
+    <title>Situation 2</title>
     <link rel="stylesheet" href="styles.css" media="screen">
     <link rel="stylesheet" href="situations.css" media="screen">
     <link rel="icon" href="images/logo.ico">
@@ -13,13 +13,13 @@
           <a>#JUSTICEAUBUREAU</a>
         </h3>
         <a href="Accueil.html">
-            <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-1" src="images/logo.ico" alt="" data-image-width="500" data-image-height="500">
+          <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-1" src="images/logo.ico" alt="" data-image-width="500" data-image-height="500">
         </a>
       </div>
     </header>
     <section class="u-clearfix u-container-align-center u-section-1" id="sec-3100">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <img class="u-image u-image-default u-image-1" src="images/8.png" alt="" data-image-width="1000" data-image-height="412">
+        <img class="u-image u-image-default u-image-1" src="images/9.jpg" alt="" data-image-width="1000" data-image-height="412">
       </div>
     </section>
     <section class="u-align-left u-clearfix u-section-2" id="sec-eaa6">
@@ -28,10 +28,10 @@
           <div class="fr-wrapper" dir="auto">
             <div class="fr-element fr-view" dir="auto" aria-disabled="false" spellcheck="true">
               <h1 style="text-align: center;">
-                <span style="font-size: 2.25rem;">Situation 3 : au bureau</span>
+                <span style="font-size: 2.25rem;">Situation 2 : en salle de pause</span>
               </h1>
               <p style="text-align: left;">
-                <span style="line-height: 2.0;">Scénario : Vous êtes concentré sur votre travail au bureau, mais soudain, votre collègue commence à franchir une ligne inacceptable en vous touchant de manière inappropriée. La tension monte rapidement alors que vous vous trouvez confronté à des avances non désirées, créant une situation très dérangeante.</span>
+                <span style="line-height: 2.0;">Scénario : Vous assistez à une réunion d'équipe où une collègue est en train de faire une présentation importante. Cependant, vous remarquez que deux de vos collègues masculins échangent des regards suggestifs et harcelants tout au long de la présentation de la collègue.</span>
               </p>
             </div>
           </div>
@@ -40,19 +40,22 @@
         <h3 class="u-subtitle u-text u-text-2">Que faites-vous dans cette situation ?</h3>
         <form id="maForme">
             <label>
-                <input type="radio" name="action" value="1"> Ignorer la situation pour éviter des conflits.
+                <input type="radio" name="action" value="1"> Ignorer la situation et continuer à écouter la présentation.
             </label>
             <br>
             <label>
-                <input type="radio" name="action" value="2"> Intervenir immédiatement et demander à votre chef de cesser.
+                <input type="radio" name="action" value="2"> Faire des commentaires désobligeants à voix basse pour exprimer votre désapprobation envers les regards harcelants.
             </label>
             <br>
             <label>
-                <input type="radio" name="action" value="3"> Parler à un autre collègue pour obtenir de l'aide.
+                <input type="radio" name="action" value="3"> Intervenir immédiatement en demandant aux collègues de cesser leur comportement. 
             </label>
             <br>
             <label>
-                <input type="radio" name="action" value="4"> Signaler la situation au département des ressources humaines.
+                <input type="radio" name="action" value="4"> En parler à un autre collègue pour obtenir des conseils.
+            </label>
+            <label>
+              <input type="radio" name="action" value="5"> Signaler la situation au département des ressources humaines.
             </label>
             <br>
             <br>
@@ -82,9 +85,9 @@
     <div class="u-clearfix u-sheet u-sheet-1">
         <a href="Accueil.html">Retour à la page d'accueil</a>
     </div>
-    
-    <br>
 
+    <br>
+    
     <script>
         function afficherReponse() {
             var reponseDiv = document.getElementById("reponse");
@@ -96,16 +99,19 @@
                 var action = selectedOption.value;
                 switch (action) {
                     case "1":
-                        reponseDiv.innerHTML = "<br>\Ignorer la situation peut être tentant, mais il est essentiel de traiter le harcèlement sexuel sérieusement. Ignorer cela pourrait permettre au comportement de continuer. Je vous encourage à envisager de signaler la situation pour garantir un environnement de travail sûr.";
+                        reponseDiv.innerHTML = "<br>\Il est important de créer un environnement de travail respectueux. Ignorer la situation peut permettre au harcèlement de continuer. Il est recommandé d'intervenir pour soutenir un environnement de travail positif.\"";
                         break;
                     case "2":
-                        reponseDiv.innerHTML = "<br>\Votre réponse est appropriée. Demander à votre chef de cesser immédiatement est une action importante pour mettre fin au harcèlement. Si cela ne résout pas le problème, envisagez de signaler la situation au département des ressources humaines.";
+                        reponseDiv.innerHTML = "<br>\Exprimer votre désapprobation est compréhensible, mais cela peut ne pas résoudre le problème de manière appropriée. Plutôt que des commentaires désobligeants, envisagez de parler directement aux collègues pour leur demander d'arrêter.\"";
                         break;
                     case "3":
-                        reponseDiv.innerHTML = "<br>\Parler à un collègue pour obtenir de l'aide émotionnelle peut être utile, mais il est tout aussi important de signaler la situation au département des ressources humaines pour résoudre le problème de manière appropriée.";
+                        reponseDiv.innerHTML = "<br>\Intervenir pour mettre fin au harcèlement est une action importante. Cela montre votre soutien envers un environnement de travail respectueux. Continuez à intervenir si le comportement persiste.\"";
                         break;
                     case "4":
-                        reponseDiv.innerHTML = "<br>\Votre réponse est la plus appropriée. Signaler la situation au département des ressources humaines est essentiel pour mettre fin au harcèlement sexuel au travail. Cela permettra de protéger vos droits et d'assurer un environnement de travail sûr pour tous les employés.";
+                        reponseDiv.innerHTML = "<br>\Obtenir des conseils peut être utile, mais n'oubliez pas qu'il est également important d'agir directement pour mettre fin au harcèlement. Vous pouvez parler aux collègues harceleurs ou signaler la situation au département des ressources humaines pour obtenir de l'aide.\"";
+                        break;
+                    case "5":
+                        reponseDiv.innerHTML = "<br>\Votre décision de signaler la situation au département des ressources humaines est la marche à suivre appropriée. Cela permettra à l'entreprise de prendre des mesures pour mettre fin au harcèlement et de préserver un environnement de travail respectueux pour tous les employés. Merci d'avoir pris cette action.\"";
                         break;
                 }
             }

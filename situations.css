@@ -46,12 +46,3 @@
       margin-right: 0;
     }
   }
-  .quiz-container {
-    text-align: center; /* Pour centrer le contenu horizontalement */
-}
-
-.quiz-container img {
-    max-width: 100%; /* Assurez-vous que l'image ne dépasse pas la largeur du container */
-    height: auto; /* Gardez le ratio hauteur/largeur de l'image */
-    margin-top: 10px; /* Espace supérieur entre le texte et l'image (ajustez selon vos besoins) */
-}
