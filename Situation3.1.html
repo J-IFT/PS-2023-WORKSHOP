@@ -2,7 +2,7 @@
 <html style="font-size: 16px;" lang="fr"><head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <title>Situation 2</title>
+    <title>Situation 3</title>
     <link rel="stylesheet" href="styles.css" media="screen">
     <link rel="stylesheet" href="situations.css" media="screen">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
@@ -14,7 +14,7 @@
       </div></header>
     <section class="u-clearfix u-container-align-center u-section-1" id="sec-3100">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <img class="u-image u-image-default u-image-1" src="images/7.jpg" alt="" data-image-width="1000" data-image-height="412">
+        <img class="u-image u-image-default u-image-1" src="images/8.png" alt="" data-image-width="1000" data-image-height="412">
       </div>
     </section>
     <section class="u-align-left u-clearfix u-section-2" id="sec-eaa6">
@@ -23,10 +23,10 @@
           <div class="fr-wrapper" dir="auto">
             <div class="fr-element fr-view" dir="auto" aria-disabled="false" spellcheck="true">
               <h1 style="text-align: center;">
-                <span style="font-size: 2.25rem;">Situation 2 : en salle de pause</span>
+                <span style="font-size: 2.25rem;">Situation 3 : au bureau</span>
               </h1>
               <p style="text-align: left;">
-                <span style="line-height: 2.0;">Scénario : Vous travaillez dans une équipe où un collègue vous fait régulièrement des compliments sur votre apparence physique, même après que vous lui ayez demandé d'arrêter.</span>
+                <span style="line-height: 2.0;">Scénario : Vous êtes concentré sur votre travail au bureau, mais soudain, votre collègue commence à franchir une ligne inacceptable en vous touchant de manière inappropriée. La tension monte rapidement alors que vous vous trouvez confronté à des avances non désirées, créant une situation très dérangeante.</span>
               </p>
             </div>
           </div>
@@ -35,20 +35,19 @@
         <h3 class="u-subtitle u-text u-text-2">Que faites-vous dans cette situation ?</h3>
         <form id="maForme">
             <label>
-                <input type="radio" name="action" value="1"> Ignorer les compliments pour éviter les conflits.
+                <input type="radio" name="action" value="1"> Ignorer la situation pour éviter des conflits.
             </label>
             <br>
             <label>
-                <input type="radio" name="action" value="2"> Dire clairement à votre collègue d'arrêter  et de signaler la situation au département des ressources humaines.
+                <input type="radio" name="action" value="2"> Intervenir immédiatement et demander à votre chef de cesser.
             </label>
             <br>
             <label>
-                <input type="radio" name="action" value="3"> Rire des compliments pour ne pas paraître sérieux.
+                <input type="radio" name="action" value="3"> Parler à un autre collègue pour obtenir de l'aide.
             </label>
             <br>
             <label>
-                <input type="radio" name="action" value="4"> Parler à un autre collègue pour obtenir des conseils.
-
+                <input type="radio" name="action" value="4"> Signaler la situation au département des ressources humaines.
             </label>
             <br>
             <br>
@@ -90,16 +89,16 @@
                 var action = selectedOption.value;
                 switch (action) {
                     case "1":
-                        reponseDiv.innerHTML = "<br>\Ignorer les compliments n'est pas la solution idéale dans cette situation. Si les compliments sont inappropriés et vous mettent mal à l'aise, il est important de prendre des mesures pour mettre fin à cette situation.\"";
+                        reponseDiv.innerHTML = "<br>\Ignorer la situation peut être tentant, mais il est essentiel de traiter le harcèlement sexuel sérieusement. Ignorer cela pourrait permettre au comportement de continuer. Je vous encourage à envisager de signaler la situation pour garantir un environnement de travail sûr.";
                         break;
                     case "2":
-                        reponseDiv.innerHTML = "<br>\C'est la réponse correcte. Dire clairement à votre collègue d'arrêter ces compliments inappropriés est une étape essentielle. De plus, signaler la situation au département des ressources humaines est important pour mettre fin au comportement non désiré.\"";
+                        reponseDiv.innerHTML = "<br>\Votre réponse est appropriée. Demander à votre chef de cesser immédiatement est une action importante pour mettre fin au harcèlement. Si cela ne résout pas le problème, envisagez de signaler la situation au département des ressources humaines.";
                         break;
                     case "3":
-                        reponseDiv.innerHTML = "<br>\Rire des compliments peut donner l'impression que vous acceptez ou tolérez ce comportement, ce qui n'est pas souhaitable dans une situation de harcèlement. Il est préférable de communiquer clairement votre inconfort.\"";
+                        reponseDiv.innerHTML = "<br>\Parler à un collègue pour obtenir de l'aide émotionnelle peut être utile, mais il est tout aussi important de signaler la situation au département des ressources humaines pour résoudre le problème de manière appropriée.";
                         break;
                     case "4":
-                        reponseDiv.innerHTML = "<br>\Parler à un autre collègue peut être une étape utile pour obtenir du soutien émotionnel, mais cela ne résoudra pas le problème à lui seul. Il est essentiel de communiquer directement avec votre collègue et de signaler la situation au département des ressources humaines pour résoudre ce problème.\"";
+                        reponseDiv.innerHTML = "<br>\Votre réponse est la plus appropriée. Signaler la situation au département des ressources humaines est essentiel pour mettre fin au harcèlement sexuel au travail. Cela permettra de protéger vos droits et d'assurer un environnement de travail sûr pour tous les employés.";
                         break;
                 }
             }
