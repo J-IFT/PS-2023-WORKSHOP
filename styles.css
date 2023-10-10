@@ -4,7 +4,7 @@
  * Copyright 2014-2021 Froala Labs
  */
 
-.fr-clearfix::after {
+ .fr-clearfix::after {
   clear: both;
   display: block;
   content: "";
@@ -41824,13 +41824,25 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-sheet-1 {
-  min-height: 137px;
+  min-height: 146px;
 }
 
 .u-header .u-text-1 {
-  margin: 47px auto;
+  margin: 47px auto 0;
 }
 
+.u-header .u-image-1 {
+  width: 99px;
+  height: 99px;
+  margin: -67px auto 23px 0;
+}
+@media (max-width: 1199px) {
+  .u-header .u-image-1 {
+    width: 99px;
+    height: 99px;
+    margin-top: -67px;
+  }
+}
 
 
 
@@ -41839,33 +41851,30 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-footer .u-sheet-1 {
-  min-height: 120px;
+  min-height: 129px;
 }
 
 .u-footer .u-text-1 {
   width: 417px;
-  margin: 49px auto;
+  margin: 49px auto 0;
+}
+
+.u-footer .u-image-1 {
+  width: 99px;
+  height: 99px;
+  margin: -61px 0 19px auto;
 }
 @media (max-width: 1199px) {
-  .u-footer .u-sheet-1 {
-    min-height: 99px;
+  .u-footer .u-image-1 {
+    width: 99px;
+    height: 99px;
+    margin-top: -61px;
+    margin-right: 0;
   }
 }
-@media (max-width: 991px) {
-  .u-footer .u-sheet-1 {
-    min-height: 76px;
-  }
-}
-@media (max-width: 767px) {
-  .u-footer .u-sheet-1 {
-    min-height: 57px;
-  }
-}
-@media (max-width: 575px) {
-  .u-footer .u-sheet-1 {
-    min-height: 36px;
-  }
 
+
+@media (max-width: 575px) {
   .u-footer .u-text-1 {
     width: 340px;
   }
