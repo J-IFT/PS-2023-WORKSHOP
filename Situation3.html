@@ -51,7 +51,7 @@
             </label>
             <br>
             <br>
-            <input type="button" value="Valider" onclick="afficherReponse()">
+            <input type="button" value="Valider" class="u-border-none u-btn u-button-style u-palette-2-light-2 u-btn-1" onclick="afficherReponse()">
         </form>
         
         <div id="reponse">
@@ -59,6 +59,19 @@
         </div>
       </div>
     </section>
+
+    <div class="u-clearfix u-sheet u-sheet-1">
+        <p>Quelques liens utiles :</p>
+        <ul>
+            <li><a href="https://www.service-public.fr/particuliers/vosdroits/F2354">Harcèlement moral au travail</a></li>
+            <li><a href="https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006177846">Code du travail</a></li>
+            <li><a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037289662">Code pénal</a></li>
+        </ul>
+        <p>Si vous êtes victime de harcèlement au travail, France Victimes est là pour vous venir en aide. Nos écoutants sont disponibles 7j/7 de 9h à 19h par le biais du numéro gratuit d’aide aux victimes, le 116 006 (hors métropole +33 1 80 52 33 76).</p>
+    </div>
+
+    <br>
+    <br>
 
     <!-- Bouton de retour à la page d'accueil -->
     <div class="u-clearfix u-sheet u-sheet-1">
@@ -76,16 +89,16 @@
                 var action = selectedOption.value;
                 switch (action) {
                     case "1":
-                        reponseDiv.innerHTML = "<br>\Ignorer la situation :<br>\"Ignorer la situation peut être tentant, mais il est essentiel de traiter les avances non désirées de manière appropriée. Ignorer cela pourrait permettre au comportement de continuer. Je vous encourage à envisager d'autres mesures pour garantir un environnement de travail sûr.\"";
+                        reponseDiv.innerHTML = "<br>\Ignorer la situation peut être tentant, mais il est essentiel de traiter les avances non désirées de manière appropriée. Ignorer cela pourrait permettre au comportement de continuer. Je vous encourage à envisager d'autres mesures pour garantir un environnement de travail sûr.";
                         break;
                     case "2":
-                        reponseDiv.innerHTML = "<br>\Intervenir immédiatement et demander à votre collègue de cesser :<br>\"Votre réponse est appropriée. Intervenir immédiatement et demander à votre collègue de cesser est une manière efficace de mettre fin au harcèlement sexuel. Il est important d'établir des limites claires.\"";
+                        reponseDiv.innerHTML = "<br>\Votre réponse est appropriée. Intervenir immédiatement et demander à votre collègue de cesser est une manière efficace de mettre fin au harcèlement sexuel. Il est important d'établir des limites claires.";
                         break;
                     case "3":
-                        reponseDiv.innerHTML = "<br>\Parler à un autre collègue pour obtenir de l'aide :<br>\"Parler à un autre collègue pour obtenir de l'aide peut être une bonne idée pour avoir du soutien émotionnel, mais il est tout aussi important de mettre fin au harcèlement. Vous devriez également envisager de signaler la situation au département des ressources humaines pour qu'ils puissent prendre des mesures appropriées.\"";
+                        reponseDiv.innerHTML = "<br>\Parler à un autre collègue pour obtenir de l'aide peut être une bonne idée pour avoir du soutien émotionnel, mais il est tout aussi important de mettre fin au harcèlement. Vous devriez également envisager de signaler la situation au département des ressources humaines pour qu'ils puissent prendre des mesures appropriées.";
                         break;
                     case "4":
-                        reponseDiv.innerHTML = "<br>\Signaler la situation au département des ressources humaines :<br>\"Votre réponse est la plus appropriée. Signaler la situation au département des ressources humaines est essentiel pour mettre fin au harcèlement sexuel en milieu de travail. Cela protégera vos droits et contribuera à créer un environnement de travail sûr pour tous les employés.\"";
+                        reponseDiv.innerHTML = "<br>\Votre réponse est la plus appropriée. Signaler la situation au département des ressources humaines est essentiel pour mettre fin au harcèlement sexuel en milieu de travail. Cela protégera vos droits et contribuera à créer un environnement de travail sûr pour tous les employés.";
                         break;
                 }
             }
