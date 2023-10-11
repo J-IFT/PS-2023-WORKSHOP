@@ -12,8 +12,11 @@
         <h3 class="u-headline u-text u-text-default u-text-1">
           <a>#JUSTICEAUBUREAU</a>
         </h3>
-        <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-1" src="images/logo.ico" alt="" data-image-width="500" data-image-height="500">
-      </div></header>
+        <a href="Accueil.html">
+            <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-1" src="images/logo.ico" alt="" data-image-width="500" data-image-height="500">
+        </a>
+      </div>
+    </header>
       <section class="u-clearfix u-container-align-center u-section-1" id="sec-3100">
         <div class="u-clearfix u-sheet u-sheet-1">
           <img class="u-image u-image-default u-image-1" src="images/mail1.png" alt="" data-image-width="1000" data-image-height="412">
@@ -30,7 +33,7 @@
               <p style="text-align: left;">
                 <span style="line-height: 2.0;">Scénario 1 : Vous recevez régulièrement des courriers électroniques de nature sexuellement suggestive de la part d'une collègue de travail, malgré votre demande de mettre fin à ce comportement.</span>
               </p>
-              
+
           </div>
           <div class="fr-second-toolbar"></div>
         </div>
@@ -43,26 +46,26 @@
             </label>
             <br>
             <label>
-                <input type="radio" name="action" value="2">   Répondre en disant que ce comportement n'est pas acceptable. 
+                <input type="radio" name="action" value="2"> Répondre en disant que ce comportement n'est pas acceptable.
             </label>
             <br>
             <label>
-              <input type="radio" name="action" value="3"> Bloquer la collègue pour ne plus recevoir de courriers électroniques. 
+              <input type="radio" name="action" value="3"> Bloquer la collègue pour ne plus recevoir de courriers électroniques.
           </label>
             <br>
             <label>
                 <input type="radio" name="action" value="4"> Signaler la situation au département des ressources humaines.
             </label>
             <br>
-           
+
             <br>
             <br>
-            <input type="button" value="Valider" onclick="afficherReponse2()">
+            <input type="button" value="Valider" class="u-border-none u-btn u-button-style u-palette-2-light-2 u-btn-1" onclick="afficherReponse2()">
             <!-- Le pop-up -->
             <a href="Situation4-1.html" class="u-border-none u-btn u-button-style u-palette-2-light-2 u-btn-1" style="float: right;">Suivant ></a>
         </form>
         </div>
-        
+
 
         <!--
         <div class="question">
@@ -84,7 +87,7 @@
                 <input type="radio" name="action" value="4"> Parler à un ami au travail pour obtenir des conseils.
             </label>
             <br>
-           
+
             <br>
             <br>
             <input type="button" value="Valider" onclick="afficherReponse1()">
@@ -110,11 +113,11 @@
   <br>
   <br>
 
-  
-  
+
+
   <br>
   <!-- Bouton de retour à la page d'accueil -->
-  <div class="u-clearfix u-sheet u-sheet-1">
+  <div class="u-clearfix u-sheet u-sheet-1" align="center">
       <a href="Accueil.html">Retour à la page d'accueil</a>
   </div>
 
@@ -123,7 +126,7 @@
         function afficherReponse2() {
             var reponseDiv = document.getElementById("reponse");
             var selectedOption = document.querySelector('input[name="action"]:checked');
-            
+
             if (!selectedOption) {
                 reponseDiv.innerHTML = "Vous n'avez rien sélectionné.";
                 reponseDiv.style.color = "red";
@@ -131,22 +134,22 @@
                 var action = selectedOption.value;
                 switch (action) {
                     case "1":
-                        reponseDiv.innerHTML = "<br><br><br>\Ignorer les courriers électroniques pour éviter les problèmes :<br><br>\" Il est essentiel de faire face au harcèlement. Ignorer les courriers électroniques peut ne pas résoudre le problème à long terme. Si vous vous sentez harcelé, il est important d'en parler pour mettre fin à cette situation.\"";
+                        reponseDiv.innerHTML = "<br>\Il est essentiel de faire face au harcèlement. Ignorer les courriers électroniques peut ne pas résoudre le problème à long terme. Si vous vous sentez harcelé, il est important d'en parler pour mettre fin à cette situation.";
                         reponseDiv.style.color = "red";
                         break;
                     case "2":
-                        reponseDiv.innerHTML = "<br><br><br>\Répondre en disant que ce comportement n'est pas acceptable :<br><br>\"C'est une étape positive. Il est important de communiquer à la personne que son comportement est inacceptable. Si le harcèlement persiste, envisagez de signaler la situation.\"";
+                        reponseDiv.innerHTML = "<br>\C'est une étape positive. Il est important de communiquer à la personne que son comportement est inacceptable. Si le harcèlement persiste, envisagez de signaler la situation.";
                         reponseDiv.style.color = "green";
                         break;
                     case "3":
-                        reponseDiv.innerHTML = "<br><br><br>\Bloquer la collègue pour ne plus recevoir de courriers électroniques :<br><br>\"Bloquer la collègue pour ne plus recevoir de courriers électroniques :Bloquer la personne peut être une mesure temporaire, mais il est également recommandé de signaler la situation au département des ressources humaines pour que des mesures appropriées soient prises.\"";
+                        reponseDiv.innerHTML = "<br>\Bloquer la collègue pour ne plus recevoir de courriers électroniques :Bloquer la personne peut être une mesure temporaire, mais il est également recommandé de signaler la situation au département des ressources humaines pour que des mesures appropriées soient prises.";
                         reponseDiv.style.color = "red";
                         break;
                     case "4":
-                        reponseDiv.innerHTML = "<br><br><br>\ Signaler la situation au département des ressources humaines :<br><br>\"Excellent choix. Signaler le harcèlement au département des ressources humaines est une étape importante pour mettre fin à cette situation. Ils prendront des mesures pour enquêter et traiter le problème de manière appropriée.\"";
+                        reponseDiv.innerHTML = "<br>\Excellent choix. Signaler le harcèlement au département des ressources humaines est une étape importante pour mettre fin à cette situation. Ils prendront des mesures pour enquêter et traiter le problème de manière appropriée.";
                         reponseDiv.style.color = "green";
                         break;
-                    
+
                 }
             }
         }
@@ -160,9 +163,9 @@ document.getElementById("fermerPopup").addEventListener("click", function() {
 });
 
     </script>
-    
+
     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-1141"><div class="u-clearfix u-sheet u-sheet-1">
         <p class="u-small-text u-text u-text-variant u-text-1">Présenté par Aymeric, Juliette, Walid, Meidi &amp; Mohand</p>
       </div></footer>
-  
+
 </body></html>
