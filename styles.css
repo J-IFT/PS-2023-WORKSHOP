@@ -4,6 +4,63 @@
  * Copyright 2014-2021 Froala Labs
  */
 
+ .dashboard {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.indicator {
+  padding: 10px;
+  border-right: 1px solid #e0e0e0;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px; /* Ajout de marge pour l'espace entre les indicateurs */
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.data h2 {
+  font-size: 0.4rem;
+  margin-top: 10px;
+}
+
+/* Couleurs pour les indicateurs */
+.light-blue {
+  background-color: #3498db;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.light-green {
+  background-color: #27ae60;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.light-orange {
+  background-color: #f39c12;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.light-marron {
+  background-color: #a37f63cc;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.white {
+  color: #fff;
+}
  .fr-clearfix::after {
   clear: both;
   display: block;
